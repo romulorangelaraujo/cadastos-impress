@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Impressoras - Suprivix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="Gemini_Generated_Image_vfwzgsvfwzgsvfwz.png" alt="Logo Suprivix" class="logo">
+            <h1>Cadastro de Impressoras</h1>
+            <p>Sistema de gerenciamento de ativos</p>
+        </header>
+
+        <main class="form-wrapper">
+            <form id="printerForm">
+                <div class="form-group">
+                    <label for="brand">Marca</label>
+                    <input type="text" id="brand" name="brand" placeholder="Ex: HP, Epson" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="model">Modelo</label>
+                    <input type="text" id="model" name="model" placeholder="Ex: LaserJet Pro M404dw" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="serial">Número de Série</label>
+                    <input type="text" id="serial" name="serial" placeholder="Digite o número de série" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ip">Endereço IP</label>
+                    <input type="text" id="ip" name="ip" placeholder="192.168.0.1"
+                        pattern="^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$" title="Digite um endereço IP válido">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Setor / Localização</label>
+                    <input type="text" id="location" name="location" placeholder="Ex: RH, Financeiro" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Cadastrar Impressora</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+    <a href="toner.html" class="btn-toner">Cadastro de Toner</a>
+</body>
+
+</html>
